@@ -1,0 +1,27 @@
+<?php
+// abstract class
+abstract class AbstractName {
+	
+	public string $name;
+	
+	public function getName(string $name) {
+		$this->name = $name;
+	}
+	
+	public function echoName() {
+		echo $this->name;
+	}
+	
+}
+
+class User extends AbstractName {
+	// changed abstract method
+	public function getName(string $name) {
+		$this->name = "";
+	}
+	
+}
+
+$User = new User;
+$User->getName('Ivan');
+$User->echoName();
