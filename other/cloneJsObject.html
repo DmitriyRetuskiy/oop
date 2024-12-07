@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+      <script>
+      
+        class Person {
+          name;
+          constructor(name) {
+             this.name = name;
+          }
+        }
+        let sum = 3 + 2;
+        alert(sum);
+        let Obj1 = new Person('Ivan');
+        let Julia = {...Obj1}; // clone object
+        let myArr = [1,2,3,4,5];
+        let newArr = [9,9,...myArr];
+        alert(newArr);
+        alert(myArr);
+        Obj1.name = 'Kola';
+        
+        alert(Julia.name); // not changed before
+        
+        alert('hi');
+      </script>
+  </body>
+</html>
